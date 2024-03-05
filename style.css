@@ -1,0 +1,85 @@
+html {
+  background-color: #009739;
+  height: 100%;
+  width: 100%;
+}
+
+h1, h2{
+  font-family:"Honk";
+  text-align:center;
+}
+
+h2{
+	font-size:1.75em;
+}
+h1{
+	font-weight:bolder;
+	font-size: 6em;;
+}
+.pics{
+	width:55%;
+	display:inline;
+	float:left;
+}
+
+#main{
+	display:flex;
+	flex-basis:2000px;
+	gap:1.75%;
+}
+
+label, select, option{
+  border-radius:10px;
+  background-color: #009739;
+}
+
+select, option{
+  font-size:2em;
+  background-color: #FEDD00;
+}
+
+option{
+	text-align:center;
+	font-size:2em;
+}
+
+option{
+	font-family:"Honk";
+	font-size:2.3em;
+	padding:10px;
+}
+
+#main div{
+	line-height:25px;
+	background-color: #FEDD00;
+	padding:12px;
+	border-radius:5%;
+}
+
+@media (min-width:800px){
+	#main{
+		flex-direction:row;
+		justify-content: center;
+	}
+	#main div{
+		max-width: 26%;
+	}
+}
+@media (max-width:800px){
+	#main{
+		flex-direction:column;
+		align-content: center;
+		gap:5vh;
+	}
+	.pics{
+		width:25%;
+	}
+}
+
+#top{
+	color:white;
+}
+p{
+	font-family: cursive;
+	display:inline;
+}
