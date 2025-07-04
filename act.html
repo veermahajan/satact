@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TestPrep Intro</title>
+  <title>ACT</title>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script>
     const SUPABASE_URL = 'https://etdwiqxusofdxialaqmv.supabase.co';
@@ -9,13 +9,18 @@
     const client = createClient(SUPABASE_URL, SUPABASE_KEY);
   </script>
   <script src="auth.js" defer></script>
+  <script src="script.js" defer></script>
+  <script>
+  window.addEventListener('DOMContentLoaded', async () => {
+    const { data: { user } } = await client.auth.getUser();
+    if (!user) window.location.href = "index.html";
+  });
+</script>
 </head>
 <body>
-  <h1>Welcome to TestPrep</h1>
+  <h1>SAT Videos and Quizzes</h1>
   <div id="auth-links"></div>
-  <nav>
-    <a href="sat.html">SAT</a> |
-    <a href="act.html">ACT</a>
-  </nav>
+  <div id="videos"></div>
+  <div id="quizzes"></div>
 </body>
 </html>
