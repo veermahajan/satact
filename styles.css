@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+  line-height:1.4em;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 2em;
+}
+.container {
+  background: white;
+  max-width: 700px;
+  margin: auto;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+div{
+  line-height:1.8em;
+}
+li, p{
+  text-align: left;
+}
+input, button {
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: 1em;
+}
+.hidden { display: none; }
+summary {
+  user-select: none;
+}

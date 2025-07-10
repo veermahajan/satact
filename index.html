@@ -1,21 +1,30 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>TestPrep Intro</title>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script>
-    const SUPABASE_URL = 'https://etdwiqxusofdxialaqmv.supabase.co';
-    const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV0ZHdpcXh1c29mZHhpYWxhcW12Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTE1OTgwOTAsImV4cCI6MjA2NzE3NDA5MH0.j_3punDyubt0_X9RA6LHkzOVdWLdo5tgDNaSlXA6UNU';
-    const client = createClient(SUPABASE_URL, SUPABASE_KEY);
-  </script>
-  <script src="auth.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAT/ACT Prep</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Welcome to TestPrep</h1>
-  <div id="auth-links"></div>
-  <nav>
-    <a href="sat.html">SAT</a> |
-    <a href="act.html">ACT</a>
-  </nav>
+  <div class="container">
+	<h1>Welcome to the SAT/ACT Prep Hub</h1>
+    <details>
+      <summary>About Me</summary>
+      <p>Hi! I'm Veer Mahajan, a rising junior in Fremont, California. I started tutoring in middle school online on Schoolhouse.world (<a target="_blank" href="https://schoolhouse.world/transcript/5bc94629-5570-4fa4-a9e6-6a14c24d870e">my portfolio</a>) and realized it was rewarding and enjoyable for me, which prompted me to continue. Since then, I've focused more on one-on-one and small group tutoring on other online and offline platforms, including various school clubs and international organizations. My primary focus in teaching has been math, particularly from a contest math perspective, and I enjoy working through problems from the AMC 10/12, AIME, HMMT, CML, ARML, and other exams.</p>
+    </details>
+
+
+
+	<div id="after-login">
+	  <a href="sat.html"><button>SAT Resources</button></a>
+	  <a href="act.html"><button>ACT Resources</button></a>
+	</div>
+  </div>
+
+  <script type="module" src="auth.js"></script>
 </body>
 </html>
+
+<!-- act.html and sat.html will include auth check on load -->

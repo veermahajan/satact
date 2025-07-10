@@ -1,26 +1,36 @@
+<!-- sat.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>SAT</title>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script>
-    const SUPABASE_URL = 'https://etdwiqxusofdxialaqmv.supabase.co';
-    const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV0ZHdpcXh1c29mZHhpYWxhcW12Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTE1OTgwOTAsImV4cCI6MjA2NzE3NDA5MH0.j_3punDyubt0_X9RA6LHkzOVdWLdo5tgDNaSlXA6UNU';
-    const client = createClient(SUPABASE_URL, SUPABASE_KEY);
-  </script>
-  <script src="auth.js" defer></script>
-  <script src="script.js" defer></script>
-  <script>
-  window.addEventListener('DOMContentLoaded', async () => {
-    const { data: { user } } = await client.auth.getUser();
-    if (!user) window.location.href = "index.html";
-  });
-</script>
+  <meta charset="UTF-8">
+  <title>SAT Prep</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>SAT Videos and Quizzes</h1>
-  <div id="auth-links"></div>
-  <div id="videos"></div>
-  <div id="quizzes"></div>
+  <div class="container">
+	<h1>SAT Prep Resources</h1>
+    <details>
+      <summary>Qualifications</summary>
+      <p>I scored a 1580 on the SAT on my first attempt, with a perfect score (800) in math and 780 in English. I didn't spend hours studying vocabulary or reviewing formulas; I just had <strong>a good strategy</strong> for taking the test and had <strong>clear principles</strong> going into it, which enabled me to answer the questions quickly, correctly, and without stress. Learn and practice the same methods in this course.</p>
+    </details>
+    <details>
+      <summary>Registration Information</summary>
+      <p>If you're interested in registering, start by filling out <a target="_blank" href="https://forms.gle/535EyQXdCbTP1D8G8">this interest form</a> and providing the necessary information. Add your schedule availability <a target="_blank" href="https://www.when2meet.com/?31271366-x53cb">here</a>, and I'll find and communicate possible meeting times with you. <em>For now, meetings will be online, though I may open in-person slots later on.</em> After confirming and paying, you will start classes, which will consist of small group sessions online, likely one hour long, office hours, and assignments on either Canvas/Google Classroom. We will also have a student group chat (using the Google Chat platform), and students can message me there at any time; I'm active on Google Chat and will respond soon.</p>
+    </details>
+    <details>
+      <summary>What's in a Class?</summary>
+      <p>Here is some information on the class structure. This will be flexible, and I'll keep adjusting it to best suit my students, but tentatively, regular small-group online classes will include:</p>
+      <ul>
+        <li>Lecture time, covering key concepts to know for the test</li>
+        <li>Strategy discussion, going over best practices for the test</li>
+        <li>Instructed problem solving time, demonstrations of a few sample questions being solved, making use of good test-taking and problem-solving strategies</li>
+        <li>Group activites, like Kahoots to encourage friendly competition and help with speed in question-solving</li>
+        <li>Homework/resource descriptions, assigning resources to review on Google Classroom/Canvas and providing additional practice problems (or assessments, every once in a while) to check for understanding</li>
+      </ul>
+      <p>Office hours will be Q&A sessions and times for more personalized coaching, although they will be limited. More specific, individual questions can be asked on Google Chat, where I respond quickly. The Canvas/Google Classroom resource will have lecture content, like slides, vocabulary lists, etc. and will also host quizzes and home practice material.</p>
+    </details>
+	<a href="act.html">Switch to ACT</a>
+  <a href="index.html">Back to Home</a>
+  </div>
 </body>
 </html>
